@@ -1,0 +1,23 @@
+version: '3'
+services:
+  app1:
+    build: app
+    environment:
+      - APP_NUMBER=1
+      - SLEEP=false
+    expose:
+      - "5000"
+  app2:
+    build: app
+    environment:
+      - APP_NUMBER=2
+      - SLEEP=false
+    expose:
+      - "5000"
+  app3:
+    build: app
+    environment:
+      - APP_NUMBER=3
+      - SLEEP=true
+    expose:
+      - "5000"
